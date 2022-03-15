@@ -1,0 +1,10 @@
+<h1>Everyone!</h1>
+
+<ul> Users:
+  <% User.all.each do |user| %>
+    <ul>
+      <li>Email: <%= user.email %></li>
+    </ul>
+    <br>
+  <% end %>
+</ul>

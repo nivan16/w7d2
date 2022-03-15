@@ -1,0 +1,23 @@
+<h1>Welcome!</h1>
+
+<form action="<%=session_url%>"method="POST">
+  <label for="email">Email:
+    <input type="text" name="user[email]" id="email">
+  </label>
+  <br>
+
+  <label for="pass">Password:
+    <input type="password"name="user[password]" id="pass">
+  </label>
+  <br>
+
+  <input type="submit" value="Login">
+</form>
+
+<!--<% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <%= error %>
+    <br>
+  <% end %>
+<% end %> -->
+    
